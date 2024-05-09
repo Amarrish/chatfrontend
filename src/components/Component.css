@@ -1,0 +1,216 @@
+.navbar{
+    height: 70px;
+    border: solid 1px grey;
+    background-color: darkgray;
+    top: 0;
+    z-index: 1;
+}
+.navbar img{
+    width: 50px;
+    height: 30px;
+    border-radius: 30%;
+}
+
+.navbar div .btn{
+    background-color: white;
+    color: black;
+    margin-right: 2px;
+}
+.navbar div .btn:hover{
+    background-color: black;
+    color: #ffffff;
+}
+
+.navrigtems{
+    display: flex;
+    flex-direction: row;
+}
+
+.navrigtems img{
+    margin-right: 10px;
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.navrigtems i{
+    color: rgb(0, 146, 0);
+    font-size: 15px;
+    margin-right: 2px;
+}
+
+.navrigtems .online{
+    text-align: center;
+}
+/* sidebar */
+.sidebar-container{
+    border: 1px dashed cornflowerblue;
+    border-radius: 10px;
+    box-shadow: 4px 4px 2px 2px rgb(188, 212, 255);
+    width: 100%;
+    margin-top: 1.5rem;
+    height: 500px;
+}
+.sidebar-container .listGroup{
+    overflow-y: scroll;
+    height: 400px;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+.listGroup::-webkit-scrollbar{
+    display: none;
+}
+.sidebar-container h2{
+    background-color: blanchedalmond;
+    padding: 5px;
+    border-radius: 10px;
+}
+.sidebar-container .userdivelement{
+    background-color: darkgray;
+}
+.sidebar-container .userelements{
+    display: flex;
+    align-items: center;
+    background-color: #d8e7ff;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.sidebar-container img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px dashed #ffffff;
+}
+/* messageform */
+
+.message-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(196, 196, 196);
+    border-radius: 10px;
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+}
+.message-container .chat-reciever{
+    text-align: start;
+    background-color: rgb(190, 190, 190);
+    width: 95%;
+    border-radius: 10px 10px 0px 0px;
+    align-items: center;
+    padding-top: 2px;
+}
+/* .message-container .chat-reciever .chat-reciever-name{
+    margin-left: 10px;
+    align-items: center;
+    font-weight: bolder;
+    font-style: italic;
+    color: #3a3a3a;
+} */
+.message-container .chat-recieverimg{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 138, 0);
+}
+.message-screen{
+    width: 95%;
+    height: 70vh;
+    overflow-y: scroll;
+    background-color: #e8effc;
+    border-radius: 0px 0px 5px 5px;
+    border: 1px dashed cornflowerblue;
+}
+
+.message-screen::-webkit-scrollbar {
+    display: none;
+  }
+
+  .message-btn{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+  }
+
+.message-container .messageinput{
+    width: 85%;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .message-container button{
+    background-color: rgb(250, 204, 0);
+    outline: none;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    margin-left: 2px;
+  }
+ 
+   /* message */
+ .msg-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+ }
+ .msg-containerset{
+    display: block;
+    flex-direction: column;
+ }
+ .msg-container img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+ }
+
+ .msg-container p{
+    border-radius: 20px;
+    padding: 5px;
+    color: #ffffff;
+ }
+.getmsg-container{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    /* background-color: #adcaff; */
+}
+.getmsg-container img{
+    width: 40px;
+    height: 40px;
+}
+
+.getmsg-container p{
+    background-color: dodgerblue;
+    border-radius: 20px;
+    padding: 5px;
+    color: #ffffff;
+}
+.msg-container{
+    display: flex;
+    align-items: end;
+    /* justify-content: end; */
+}
+ /* chat selected */
+.chatselect-container{
+    width: 100%;
+    background-color: darkslategrey;
+    border-radius: 20px;
+    padding: 5px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin-top: 1rem;
+}
+.chatselect-container i{
+    font-size: 30px;
+    color: #ffffff;
+}

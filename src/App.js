@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Chat from './pages/Chat';
+import Signup from './pages/Signup';
+import Login from './pages/Login';
+import { Toaster } from 'react-hot-toast';
+import { useContext } from 'react';
+import { userdataContext } from './Context/Contextshare';
+
 
 function App() {
+  const {userdata,setUserdata} = useContext(userdataContext)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/chat' element={userdata? <Chat/>: <Login/>} />
+        <Route path='/signup' element={ userdata? <Navigate to={'/'} />:<Signup/>}/>
+        <Route path='/login' element={userdata? <Navigate to={'/'} />: <Login/>}/>
+      </Routes>
+      <Toaster/>
+    </>
   );
 }
 
